@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="portfolio">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loraine's Personal Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: pink;
+            color: white;
+            line-height: 1.7;
+        }
+
+        header {
+            background: pink;
+            color: black;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h2 span {
+            color: pink;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: pink;
+        }
+
+        .home {
+            min-height: 500px;
+            background: linear-gradient(120deg, black);
+            color: white;
+            padding: 80px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .home h1 {
+            font-size: 40px;
+            margin: 15px 0;
+        }
+
+        .home h1 span {
+            color: pink;
+        }
+
+        .home p {
+            max-width: 550px;
+            margin: 20px 0;
+        }
+
+        .profile {
+            width: 200px;
+            height: 200px;
+            min-width: 200px;
+            background: pink;
+            border: 8px white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-size: 35px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: pink;
+            color: black;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: black;
+            transform: translateY(-3px);
+        }
+
+        /* GENERAL SECTIONS */
+        section:not(.home) {
+            padding: 65px 10%;
+            text-align: center;
+        }
+
+        .heading {
+            color: black;
+            margin-bottom: 30px;
+            font-size: 32px;
+        }
+
+        .box {
+            background: black;
+            padding: 25px;
+            margin: 15px auto;
+            border-radius: 10px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+            text-align: left;
+            border-left: 4px solid pink;
+            transition: 0.3s;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+        }
+
+        .box h2 {
+            color: pink;
+            margin-bottom: 10px;
+        }
+
+        .box p {
+            line-height: 1.8;
+        }
+
+        .details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .details p {
+            background: pink;
+            padding: 12px;
+            border-radius: 5px;
+        }
+
+        .light {
+            background: pink;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .cards .box {
+            width: 100%;
+            margin: 0;
+        }
+
+        pre {
+            background: black;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            text-align: left;
+            line-height: 1.6;
+            font-size: 13px;
+        }
+
+        .contact {
+            background: black;
+            color: white;
+        }
+
+        .contact h1 {
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        footer {
+            background: pink;
+            color: black;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .home {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .home h1 {
+                font-size: 30px;
+            }
+
+            .cards,
+            .details {
+                grid-template-columns: 1fr;
+            }
+
+            section:not(.home) {
+                padding: 45px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h2>MyPortfolio<span>.</span></h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#java">Java Code</a>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="home">
+        <div>
+            <h3>WELCOME TO MY PORTFOLIO</h3>
+            <h1>Hello, I'm <span>Loraine Garcia Martinez</span></h1>
+            <h2>BS Information Technology Student</h2>
+
+            <p>
+                I am a student who loves learning about technology,
+                computers, and programming. My goal is to improve
+                my skills and become a successful IT professional.
+            </p>
+
+            <a href="#about" class="btn">Explore More</a>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- PERSONAL INFORMATION -->
+    <section id="about">
+        <h1 class="heading">Personal Information</h1>
+
+        <div class="box">
+            <h2>About Me</h2>
+
+            <p>
+                My name is Loraine G. Martinez. I am 19 years old
+                and from Caballero, Guimba, Nueva Ecija. I am a
+                first-year BS Information Technology student at
+                Our Lady of the Sacred Heart College of Guimba, Inc.
+                I enjoy sleeping, playing online games, and listening
+                to music during my free time. I am a simple person
+                who wants to learn new things and improve my
+                knowledge and abilities.
+            </p>
+
+            <div class="details">
+                <p><b>Name:</b> Loraine G. Martinez</p>
+                <p><b>Age:</b> 19 years old</p>
+                <p><b>Course:</b> BS Information Technology</p>
+                <p><b>Year Level:</b> 1st Year College</p>
+                <p><b>School:</b> Our Lady of the Sacred Heart College of Guimba, Inc.</p>
+                <p><b>Email:</b> martinezloraine911@gmail.com</p>
+                <p><b>Address:</b> Caballero, Guimba, N.E.</p>
+                <p><b>Contact:</b> 09534963727</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATIONAL BACKGROUND -->
+    <section id="education" class="light">
+        <h1 class="heading">Educational Background</h1>
+
+        <div class="cards">
+
+            <div class="box">
+                <h2>Elementary</h2>
+                <p>Caballero Elementary School</p>
+                <p>Year Graduated: March 31, 2020</p>
+            </div>
+
+            <div class="box">
+                <h2>Junior High School</h2>
+                <p>Triala National High School</p>
+                <p>Year Graduated: May 30, 2024</p>
+            </div>
+
+            <div class="box">
+                <h2>Senior High School</h2>
+                <p>Triala National High School</p>
+                <p>Humanities and Social Sciences (HUMSS)</p>
+                <p>Year Graduated: March 27, 2026</p>
+            </div>
+
+            <div class="box">
+                <h2>College</h2>
+                <p>Our Lady of the Sacred Heart Parish College of Guimba</p>
+                <p>BS Information Technology - Present</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h1 class="heading">My Skills</h1>
+
+        <div class="cards">
+
+            <div class="box">
+                <h2>HTML</h2>
+                <p>
+                    I have basic knowledge of HTML, which helps me
+                    create and organize web pages. I can use different
+                    HTML tags to add headings, paragraphs, images,
+                    links, and other elements. I am continuously
+                    practicing to improve my skills in building
+                    simple and organized websites.
+                </p>
+            </div>
+
+            <div class="box">
+                <h2>CSS</h2>
+                <p>
+                    I have basic knowledge of CSS, which helps me
+                    improve the design and appearance of websites.
+                    I can use colors, fonts, backgrounds, borders,
+                    and spacing to make web pages more attractive
+                    and organized. I am still learning how to create
+                    beautiful and user-friendly website designs.
+                </p>
+            </div>
+
+            <div class="box">
+                <h2>JAVA</h2>
+                <p>
+                    I have basic knowledge of Java programming and
+                    how to create simple programs. I am learning
+                    how to use variables, data types, conditional
+                    statements, loops, and other programming
+                    commands. Through practice and activities,
+                    I am improving my logical thinking and
+                    problem-solving skills.
+                </p>
+            </div>
+
+            <div class="box">
+                <h2>COMPUTER SKILLS</h2>
+                <p>
+                    I can perform basic computer tasks such as
+                    creating documents, organizing files, browsing
+                    the internet, and using different computer
+                    applications. I can also use technology to
+                    help me with my school activities and assignments.
+                    I am willing to learn more about computers
+                    and discover new technologies.
+                </p>
+            </div>
+
+            <div class="box">
+                <h2>TEAMWORK</h2>
+                <p>
+                    I can work with other people and participate
+                    in group activities. I believe that teamwork
+                    is important because it allows everyone to
+                    share ideas, help one another, and achieve
+                    a common goal. I respect the opinions of
+                    others and do my best to contribute to every
+                    group task.
+                </p>
+            </div>
+
+            <div class="box">
+                <h2>COMMUNICATION</h2>
+                <p>
+                    I can express my thoughts, ideas, and opinions
+                    when communicating with other people. I also
+                    value listening and understanding what others
+                    have to say. I am still improving my confidence
+                    in speaking, sharing my ideas, and participating
+                    in class discussions.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- JAVA CODE -->
+    <section id="java" class="light">
+        <h1 class="heading">My Java Code</h1>
+
+        <div class="box">
+            <h2>CC102 Final Performance Task</h2>
+            <h3>Treasure Hunter: Mystery Island</h3>
+
+            <p>
+                This is my Java console-based game. The player
+                explores different locations, finds treasures,
+                avoids traps, and earns points to get a final rank.
+            </p>
+
+            <pre><code>import java.util.Scanner;
+import java.util.Random;
+
+public class TreasureHunter {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        Random random = new Random();
+
+        int points = 0;
+        int rounds = 5;
+
+        System.out.println("TREASURE HUNTER: MYSTERY ISLAND");
+        System.out.println("================================");
+
+        System.out.println("Welcome, brave explorer!");
+        System.out.println("Find treasures and avoid traps.");
+        System.out.println("You have 5 rounds to explore.");
+
+        while (rounds > 0) {
+
+            System.out.println("\nChoose a location:");
+            System.out.println("1. Dark Forest");
+            System.out.println("2. Hidden Cave");
+            System.out.println("3. Secret Beach");
+
+            System.out.print("Enter your choice: ");
+            int choice = input.nextInt();
+
+            if (choice < 1 || choice > 3) {
+                System.out.println("Invalid location!");
+                continue;
+            }
+
+            int event = random.nextInt(3) + 1;
+
+            switch (event) {
+                case 1:
+                    System.out.println("You found a golden treasure!");
+                    points += 20;
+                    break;
+
+                case 2:
+                    System.out.println("You found a small treasure!");
+                    points += 10;
+                    break;
+
+                case 3:
+                    System.out.println("Oh no! You found a trap!");
+                    points -= 5;
+                    break;
+            }
+
+            System.out.println("Current Points: " + points);
+
+            rounds--;
+            System.out.println("Remaining Locations: " + rounds);
+        }
+
+        System.out.println("\nGAME FINISHED!");
+        System.out.println("Your Final Score: " + points);
+
+        if (points >= 70) {
+            System.out.println("Rank: MASTER TREASURE HUNTER!");
+        } else if (points >= 40) {
+            System.out.println("Rank: SKILLED EXPLORER!");
+        } else {
+            System.out.println("Rank: BEGINNER EXPLORER!");
+        }
+
+        System.out.println("Thank you for playing!");
+
+        input.close();
+    }
+}</code></pre>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact">
+        <h1>Thank You for Visiting!</h1>
+
+        <p>
+            Every day is an opportunity to learn something new.
+            I will continue improving my knowledge and skills
+            to achieve my dreams in the future.
+        </p>
+
+        <a href="#home" class="btn">Back to Home</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Loraine | My Personal Portfolio</p>
+    </footer>
+
+</body>
+
+</html>

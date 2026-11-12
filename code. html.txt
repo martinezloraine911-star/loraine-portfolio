@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="portfolio">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loraine's Personal Portfolio</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h2>MyPortfolio<span>.</span></h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#java">Java Code</a>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="home">
+        <div>
+            <h3>WELCOME TO MY PORTFOLIO</h3>
+            <h1>Hello, I'm <span>Loraine Garcia Martinez</span></h1>
+            <h2>BS Information Technology Student</h2>
+
+            <p>
+                I am a student who loves learning about technology,
+                computers, and programming. My goal is to improve
+                my skills and become a successful IT professional.
+            </p>
+
+            <a href="#about" class="btn">Explore More</a>
+        </div>
+
+        <div class="profile">
+            LG
+        </div>
+    </section>
+
+    <!-- PERSONAL INFORMATION -->
+    <section id="about">
+        <h1 class="heading">Personal Information</h1>
+
+        <div class="box">
+            <h2>About Me</h2>
+
+            <p>
+                My name is Loraine G. Martinez. I am 19 years old
+                and from Caballero, Guimba, Nueva Ecija. I am a
+                first-year BS Information Technology student at
+                Our Lady of the Sacred Heart College of Guimba, Inc.
+                I enjoy sleeping, playing online games, and listening
+                to music during my free time. I am a simple person
+                who wants to learn new things and improve my
+                knowledge and abilities.
+            </p>
+
+            <div class="details">
+                <p><b>Name:</b> Loraine G. Martinez</p>
+                <p><b>Age:</b> 19 years old</p>
+                <p><b>Course:</b> BS Information Technology</p>
+                <p><b>Year Level:</b> 1st Year College</p>
+                <p><b>School:</b> Our Lady of the Sacred Heart College of Guimba, Inc.</p>
+                <p><b>Email:</b> Your email address</p>
+                <p><b>Address:</b> Guimba, Nueva Ecija</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATIONAL BACKGROUND -->
+    <section id="education" class="light">
+        <h1 class="heading">Educational Background</h1>
+
+        <div class="cards">
+
+            <div class="box">
+                <h2>Elementary</h2>
+                <p>Caballero Elementary School</p>
+                <p>Year Graduated: March 31, 2020</p>
+            </div>
+
+            <div class="box">
+                <h2>Junior High School</h2>
+                <p>Triala National High School</p>
+                <p>Year Graduated: May 30, 2024</p>
+            </div>
+
+            <div class="box">
+                <h2>Senior High School</h2>
+                <p>Triala National High School</p>
+                <p>Humanities and Social Sciences (HUMSS)</p>
+                <p>Year Graduated: March 27, 2026</p>
+            </div>
+
+            <div class="box">
+                <h2>College</h2>
+                <p>Our Lady of the Sacred Heart Parish College of Guimba</p>
+                <p>BS Information Technology - Present</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h1 class="heading">My Skills</h1>
+
+        <div class="cards">
+
+            <div class="box">
+                <h2>HTML</h2>
+                <p>
+                    I have basic knowledge of HTML, which helps me
+                    create and organize web pages. I can use different
+                    HTML tags to add headings, paragraphs, images,
+                    links, and other elements. I am continuously
+                    practicing to improve my skills in building
+                    simple and organized websites.
+                </p>
+            </div>
+
+            <div class="box">
+                <h2>CSS</h2>
+                <p>
+                    I have basic knowledge of CSS, which helps me
+                    improve the design and appearance of websites.
+                    I can use colors, fonts, backgrounds, borders,
+                    and spacing to make web pages more attractive
+                    and organized. I am still learning how to create
+                    beautiful and user-friendly website designs.
+                </p>
+            </div>
+
+            <div class="box">
+                <h2>JAVA</h2>
+                <p>
+                    I have basic knowledge of Java programming and
+                    how to create simple programs. I am learning
+                    how to use variables, data types, conditional
+                    statements, loops, and other programming
+                    commands. Through practice and activities,
+                    I am improving my logical thinking and
+                    problem-solving skills.
+                </p>
+            </div>
+
+            <div class="box">
+                <h2>COMPUTER SKILLS</h2>
+                <p>
+                    I can perform basic computer tasks such as
+                    creating documents, organizing files, browsing
+                    the internet, and using different computer
+                    applications. I can also use technology to
+                    help me with my school activities and assignments.
+                    I am willing to learn more about computers
+                    and discover new technologies.
+                </p>
+            </div>
+
+            <div class="box">
+                <h2>TEAMWORK</h2>
+                <p>
+                    I can work with other people and participate
+                    in group activities. I believe that teamwork
+                    is important because it allows everyone to
+                    share ideas, help one another, and achieve
+                    a common goal. I respect the opinions of
+                    others and do my best to contribute to every
+                    group task.
+                </p>
+            </div>
+
+            <div class="box">
+                <h2>COMMUNICATION</h2>
+                <p>
+                    I can express my thoughts, ideas, and opinions
+                    when communicating with other people. I also
+                    value listening and understanding what others
+                    have to say. I am still improving my confidence
+                    in speaking, sharing my ideas, and participating
+                    in class discussions.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- JAVA CODE -->
+    <section id="java" class="light">
+        <h1 class="heading">My Java Code</h1>
+
+        <div class="box">
+            <h2>CC102 Final Performance Task</h2>
+            <h3>Treasure Hunter: Mystery Island</h3>
+
+            <p>
+                This is my Java console-based game. The player
+                explores different locations, finds treasures,
+                avoids traps, and earns points to get a final rank.
+            </p>
+
+<pre><code>import java.util.Scanner;
+import java.util.Random;
+
+public class TreasureHunter {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        Random random = new Random();
+
+        int points = 0;
+        int rounds = 5;
+
+        System.out.println("TREASURE HUNTER: MYSTERY ISLAND");
+        System.out.println("================================");
+
+        System.out.println("Welcome, brave explorer!");
+        System.out.println("Find treasures and avoid traps.");
+        System.out.println("You have 5 rounds to explore.");
+
+        while (rounds > 0) {
+
+            System.out.println("\nChoose a location:");
+            System.out.println("1. Dark Forest");
+            System.out.println("2. Hidden Cave");
+            System.out.println("3. Secret Beach");
+
+            System.out.print("Enter your choice: ");
+            int choice = input.nextInt();
+
+            if (choice < 1 || choice > 3) {
+                System.out.println("Invalid location!");
+                continue;
+            }
+
+            int event = random.nextInt(3) + 1;
+
+            switch (event) {
+                case 1:
+                    System.out.println("You found a golden treasure!");
+                    points += 20;
+                    break;
+
+                case 2:
+                    System.out.println("You found a small treasure!");
+                    points += 10;
+                    break;
+
+                case 3:
+                    System.out.println("Oh no! You found a trap!");
+                    points -= 5;
+                    break;
+            }
+
+            System.out.println("Current Points: " + points);
+
+            rounds--;
+            System.out.println("Remaining Locations: " + rounds);
+        }
+
+        System.out.println("\nGAME FINISHED!");
+        System.out.println("Your Final Score: " + points);
+
+        if (points >= 70) {
+            System.out.println("Rank: MASTER TREASURE HUNTER!");
+        } else if (points >= 40) {
+            System.out.println("Rank: SKILLED EXPLORER!");
+        } else {
+            System.out.println("Rank: BEGINNER EXPLORER!");
+        }
+
+        System.out.println("Thank you for playing!");
+
+        input.close();
+    }
+}</code></pre>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact">
+        <h1>Thank You for Visiting!</h1>
+
+        <p>
+            Every day is an opportunity to learn something new.
+            I will continue improving my knowledge and skills
+            to achieve my dreams in the future.
+        </p>
+
+        <a href="#home" class="btn">Back to Home</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Loraine | My Personal Portfolio</p>
+    </footer>
+
+</body>
+</html>
